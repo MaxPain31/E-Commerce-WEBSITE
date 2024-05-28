@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <div class="container">
+          <div class="navbar">
+            <div class="logo">
+              <a href="#" onclick="goHome()"
+                ><img src="images/logo.png" width="120px"
+              /></a>
+              <nav>
+                <ul id="MenuItems" class="menu-hidden home-c">
+                  <li><a href="#" onclick="goHome()">Home</a></li>
+                  <li><a href="#" onclick="goShop()">Shop</a></li>
+                  <li><a href="#" onclick="goAbout()">About</a></li>
+                  <li><a href="#" onclick="goContact()">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="cart-btn">
+              <a href="#" onclick="goCart()"
+                ><img
+                  src="images/cart (2).png"
+                  width="30px"
+                  height="35px"
+              /></a>
+              <img
+                src="images/menu2.png"
+                class="menu-icon"
+                onclick="menuToggle()"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2">
+              <h1>Fuel your Game</h1>
+              <p>
+                Success isn't always about greatness. It's about consistency.
+                Consistent<br />hard work gains success. Greatness will come.
+              </p>
+              <a href="#" onclick="goShop()" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+              <img src="images/image2.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------ featured Products------------------------------>
+      <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="all-products" id="featureProductsContainer">
+        </div>
+
+        <!------------------------------ latest Products------------------------------>
+        <h2 class="title">Latest Products</h2>
+        <div class="all-products" id="newProductsContainer"></div>
+      </div>
+      <!--------------------------offer--------------------------------->
+      <div class="offer">
+        <div class="small-container">
+          <div class="row">
+            <div class="col-2">
+              <img src="images/image1.png" class="offer-img" />
+            </div>
+            <div class="col-2">
+              <p>Exclusively Available on Rhai's Sportswear</p>
+              <h1>Sports Shoes</h1>
+              <small
+                >Buy latest collections of sports shoes online on Rhai's
+                Sportswear at best prices from top brands such as Adidas, Nike,
+                Puma, Asics, and Sparx at your leisure at best prices.</small
+              ><br />
+              <a href="#" onclick="goShop()" class="btn">Buy Now &#8594;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------Testimonial---------------------------------->
+      <div class="testimonial">
+        <div class="small-container">
+          <div class="row">
+            <div class="col-3">
+              <i class="fa fa-quote-left"></i>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <img src="images/user-1.png" />
+              <h3>Sean Parkar</h3>
+            </div>
+            <div class="col-3">
+              <i class="fa fa-quote-left"></i>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+              <img src="images/user-2.png" />
+              <h3>Mike Smith</h3>
+            </div>
+            <div class="col-3">
+              <i class="fa fa-quote-left"></i>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <img src="images/user-3.png" />
+              <h3>Mabel Joe</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------Footer-------->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-2">
+              <img src="images/logo.png" />
+              <p>
+                Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+                Sports Accessible to the Many.
+              </p>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">DEVELOPED BY LAGA - GROUP 8</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <!---Header-->
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="#" onclick="goHome()"
+              ><img src="images/logo.png" width="120px"
+            /></a>
+            <nav>
+              <ul id="MenuItems" class="menu-hidden">
+                <li><a href="#" onclick="goHome()">Home</a></li>
+                <li><a href="#" onclick="goShop()">Shop</a></li>
+                <li><a href="#" onclick="goAbout()">About</a></li>
+                <li><a href="#" onclick="goContact()">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="cart-btn">
+            <a href="#" onclick="goCart()"
+              ><img src="images/cart (1).png" width="30px" height="35px"
+            /></a>
+            <img
+              src="images/menu3.png"
+              class="menu-icon"
+              onclick="menuToggle()"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Products -->
+
+      <div
+        id="addedItemMessage"
+        class="added-to-cart-message"
+        style="display: none"
+      ></div>
+
+      <div class="small-container single-product" id="productContainer"></div>
+
+      <div class="small-container">
+        <div class="row row-2">
+          <h2>Related Products</h2>
+          <a onclick="goShop()"><p>View More</p></a>
+        </div>
+      </div>
+
+      <div class="all-products" id="newProductsContainer"></div>
+      <!--------Footer-------->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-2">
+              <img src="images/logo.png" />
+              <p>
+                Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+                Sports Accessible to the Many.
+              </p>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">DEVELOPED BY LAGA - GROUP 8</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/product.js"></script>
+  </body>
+</html>
